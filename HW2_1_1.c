@@ -1,5 +1,6 @@
 //컴퓨터학과 20180971 박주희
 // 이 몸 등장☆
+// 힘들었다
 #include <stdio.h>
 #define MAX_STACK_SIZE 3
 typedef int element;
