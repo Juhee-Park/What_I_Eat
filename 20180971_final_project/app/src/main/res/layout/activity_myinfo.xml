@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFCDFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/meffxtView9"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="45dp"
+            android:autoText="true"
+            android:background="#8EA6FB"
+            android:gravity="center_vertical"
+            android:text="  What I Eat"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mxtffView7"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="성별 : "
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/sex_spinner"
+                    android:layout_width="205dp"
+                    android:layout_height="50dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mtextVffiew6"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="나이 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/myInfo_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/mteffxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" (세)"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mtextVffiew8"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="몸무게 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/myInfo_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/mtexfftView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" (kg)"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/textVffiew11"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="키 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/myInfo_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/mtexfftView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" (cm)"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mextffView7"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="상태 : "
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="212dp"
+                    android:layout_height="50dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/myInfo_b1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4447DD"
+                android:onClick="onClick"
+                android:text="확인" />
+
+            <Button
+                android:id="@+id/myInfo_b2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4447DD"
+                android:onClick="onClick"
+                android:text="취소" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

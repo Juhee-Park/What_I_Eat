@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFCDFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/mtextView9"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="45dp"
+            android:autoText="true"
+            android:background="#8EA6FB"
+            android:gravity="center_vertical"
+            android:text="  What I Eat"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mtextView7"
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="끼니정보 : "
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/meal_insert_spinner"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mtextView6"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="메뉴 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/menu_insert"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/insert_b1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#4447DD"
+                    android:onClick="onClick"
+                    android:text="🔍" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/mtextView8"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="칼로리 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/calorie_insert"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/mteffxtView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" (kcal)"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:text="위치 : "
+                    android:textSize="20dp" />
+
+                <fragment  xmlns:map="http://schemas.android.com/apk/res-auto"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:id="@+id/mapView_insert"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="200dp"
+                    map:cameraTargetLat="@string/init_lat"
+                    map:cameraTargetLng="@string/init_lng"
+                    map:cameraZoom="17"
+                    map:uiZoomControls="true"
+                    android:onClick="onClick"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <Button
+                    android:id="@+id/insert_b2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#4447DD"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="🗺️" />
+
+                <TextView
+                    android:id="@+id/location_insert"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:text=" 현재 위치 가져오기"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#DAE8FF">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="92dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text="가게이름 : "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/restaurant_insert"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/insert_b3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4447DD"
+                android:onClick="onClick"
+                android:text="확인" />
+
+            <Button
+                android:id="@+id/insert_b4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4447DD"
+                android:onClick="onClick"
+                android:text="취소" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

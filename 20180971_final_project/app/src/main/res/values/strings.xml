@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">What I eat _20180971</string>
+    <string name="api_key">AIzaSyA9vRhUQUqFv2cNWrJZF1jHlP_6rHNKapg</string>
+    <string name="init_lat">37.604094</string>
+    <string name="init_lng">127.042463</string>
+
+    <string name="server_url">http://openapi.foodsafetykorea.go.kr/api/48e780424e3d4ad99102/I2790/xml/1/1000/DESC_KOR=</string>
+</resources>

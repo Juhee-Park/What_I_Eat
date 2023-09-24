@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFCDFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="45dp"
+            android:autoText="true"
+            android:background="#8EA6FB"
+            android:gravity="center_vertical"
+            android:text="  What I Eat"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/graph_b1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#4447DD"
+            android:onClick="onClick"
+            android:text="뒤로" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#8EA6FB"
+            android:text="  이번 주의 칼로리 (일 ~ 월)"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_week"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#DAE8FF" />
+
+        <TextView
+            android:id="@+id/mtextView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#8EA6FB"
+            android:text="  이번 달의 칼로리"
+            android:textSize="20dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_month"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#DAE8FF" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
